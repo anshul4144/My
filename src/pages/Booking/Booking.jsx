@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./Booking.css";
+import API_URL from "../config";
+
 
 function Booking() {
   const [service, setService] = useState("");
@@ -11,7 +13,8 @@ function Booking() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("https://fixit-backend-cs28.onrender.com/api/booking", {
+    const res = await fetch(`${API_URL}/api/booking`
+, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

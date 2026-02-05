@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./SmartHelp.css";
+import API_URL from "../config";
+
 
 function SmartHelp() {
   const [problem, setProblem] = useState("");
@@ -17,7 +19,8 @@ function SmartHelp() {
     setLoading(true);
 
     try {
-      const res = await fetch("https://fixit-backend-cs28.onrender.com/api/ai/chat", {
+      const res = await fetch(`${API_URL}/api/ai/chat`
+, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: problem })
