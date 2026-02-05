@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./SmartHelp.css";
-import API_URL from "../config";
+import API_URL from "../../config";
 
 
 function SmartHelp() {
