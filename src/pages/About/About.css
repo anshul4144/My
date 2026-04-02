@@ -1,54 +1,89 @@
+
 .about-page {
-  padding: 100px ;
+  padding: 60px 80px;
 }
+
 
 .about-page h1 {
   text-align: center;
-  font-size: 34px;
-  margin-bottom: 50px;
+  font-size: 32px;
+  margin-bottom: 40px;
   color: #0f172a;
 }
+
 
 .about-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
 
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
 .about-image img {
-  width: 420px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 380px;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 
 .about-text-area {
+  flex: 1;
   max-width: 520px;
 }
 
 .about-text-area p {
-  font-size: 16px;
+  font-size: 15px;
   color: #475569;
-  line-height: 1.7;
-  margin-bottom: 15px;
+  line-height: 1.6;
+  margin-bottom: 12px;
 }
 
 
 .about-points {
-  margin-top: 25px;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  gap: 12px;
 }
 
 .point {
   background-color: #f8fafc;
-  padding: 12px 14px;
+  padding: 10px 12px;
   border-radius: 6px;
   font-size: 14px;
   color: #334155;
+}
+
+
+@media (max-width: 768px) {
+
+  .about-page {
+    padding: 40px 20px;
+  }
+
+  .about-page h1 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text-area {
+    max-width: 100%;
+  }
+
+  .about-points {
+    grid-template-columns: 1fr;
+  }
 }

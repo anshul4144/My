@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Navbar />
-
+      <main style={{minHeight:"80vh"}}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
@@ -20,6 +20,7 @@ function App() {
         
         <Route path="/booking" element={<Booking />} />
       </Routes>
+      </main>
       <Footer/>
     </>
   );

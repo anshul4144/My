@@ -1,3 +1,4 @@
+
 .services-page {
   padding: 60px 80px;
   background-color: #f8fafc;
@@ -10,50 +11,52 @@
 }
 
 .services-header h1 {
-  font-size: 34px;
+  font-size: 32px;
   margin-bottom: 10px;
   color: #0f172a;
 }
 
 .services-header p {
-  font-size: 16px;
+  font-size: 15px;
   color: #475569;
   max-width: 600px;
   margin: auto;
+  line-height: 1.6;
 }
 
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
 }
 
 
 .service-card {
   background-color: #ffffff;
-  padding: 30px 25px;
-  border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: 0.3s;
 }
 
 .service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
 }
 
 
 .service-card img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  margin-bottom: 15px;
-}
-.service-card h3 {
-  font-size: 22px;
+  width: 70px;
+  height: 70px;
   margin-bottom: 12px;
+}
+
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
   color: #0f172a;
 }
 
@@ -61,8 +64,8 @@
 .service-card p {
   font-size: 14px;
   color: #475569;
-  margin-bottom: 20px;
-  line-height: 1.6;
+  margin-bottom: 18px;
+  line-height: 1.5;
 }
 
 
@@ -70,14 +73,37 @@
   background-color: #2563eb;
   color: #ffffff;
   border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 8px 16px;
+  border-radius: 6px;
   cursor: pointer;
   font-size: 14px;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .service-card button:hover {
   background-color: #1d4ed8;
-  transform: translateY(-2px);
+}
+
+
+@media (max-width: 768px) {
+
+  .services-page {
+    padding: 40px 20px;
+  }
+
+  .services-header h1 {
+    font-size: 24px;
+  }
+
+  .services-header p {
+    font-size: 14px;
+  }
+
+  .services-grid {
+    gap: 20px;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
 }
